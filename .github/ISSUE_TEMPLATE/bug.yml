@@ -1,0 +1,35 @@
+name: Bug report
+description: Something here is wrong or does not work.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      description: The page, screen or command, and the steps that lead there.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Device and system, or browser, as it applies.
+  - type: checkboxes
+    id: private
+    attributes:
+      label: Private data
+      options:
+        - label: I removed passwords, personal names, locations, account details and anything else private from what I pasted.
+          required: true
