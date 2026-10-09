@@ -2,6 +2,8 @@
 
 This code of conduct covers every repository under [github.com/mobiumdev](https://github.com/mobiumdev), its issues, pull requests and discussions, and the documentation site, [mobiumdev.github.io](https://mobiumdev.github.io/).
 
+Where the text below says Community Moderators, it means Mobium's maintainer, Lana Begunova, who reads every report.
+
 ## Our Pledge
 
 We pledge to make our community welcoming, safe, and equitable for all.
@@ -48,7 +50,7 @@ We agree to restrict the following behaviors in our community. Instances, threat
 
 Tensions can occur between community members even when they are trying their best to collaborate. Not every conflict represents a code of conduct violation, and this Code of Conduct reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.
 
-When an incident does occur, it is important to report it promptly. To report a possible violation, write to **[CONDUCT_ADDRESS]**. Only Mobium's maintainer reads it, and a report is kept private: the person reported is not told who made it. If a report concerns the maintainer, use GitHub's **Report content** on the comment, issue or profile instead, which goes to GitHub.
+When an incident does occur, it is important to report it promptly. To report a possible violation, write to **[CONDUCT_ADDRESS]**. Only the maintainer reads it, and a report is kept private: the person reported is not told who made it. If a report concerns the maintainer, use GitHub's **Report content** on the comment, issue or profile instead, which goes to GitHub.
 
 Community Moderators take reports of violations seriously and will make every effort to respond in a timely manner. They will investigate all reports of code of conduct violations, reviewing messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators will keep investigation and enforcement actions as transparent as possible while prioritizing safety and confidentiality. In order to honor these values, enforcement actions are carried out in private with the involved parties, but communicating to the whole community may be part of a mutually agreed upon resolution.
 
