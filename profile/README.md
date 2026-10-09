@@ -14,7 +14,7 @@ browsers, carried over to devices.
 | [mobium-app](https://github.com/mobiumdev/mobium-app) | MobiumApp, the app Mobium's checks drive; every screen is a control for something that can go wrong |
 | [mobiumdev.github.io](https://github.com/mobiumdev/mobiumdev.github.io) | The documentation site, [mobiumdev.github.io](https://mobiumdev.github.io/) |
 
-Mobium is open source under the MIT license and has no tagged release yet;
+Mobium is open source under the Apache License 2.0 and has no tagged release yet;
 install it with `go install github.com/mobiumdev/mobium/cmd/mobium@latest`.
 
 [Documentation](https://mobiumdev.github.io/) ·

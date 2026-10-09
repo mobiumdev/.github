@@ -64,5 +64,5 @@ The documentation site is mostly generated; see its
 ## License
 
 By contributing, you agree that your contribution is licensed under the
-license of the repository it goes into: MIT for mobium, mobium-app and the
-documentation site.
+license of the repository it goes into: the Apache License 2.0 for mobium,
+and MIT for mobium-app and the documentation site.
