@@ -47,6 +47,21 @@ something that can go wrong when a tool drives an app.
 - Keep each WebView inspectable (`webviewDebuggingEnabled`). Without it an iOS
   WebView is invisible to any debugger, which is the reason the app exists.
 
+## morpho-market
+
+Morpho Market is an app under test too: a store's checkout, written natively
+twice, in SwiftUI and Jetpack Compose, with a switch of deliberate bugs.
+
+- **Both apps change together.** They share ids, text and prices, so one
+  test file drives both. A change to one platform's screens is made on the
+  other in the same pull request.
+- **Prices follow the spec.** `spec/pricing.py` is the reference and
+  `spec/pricing-cases.json` the shared cases; both apps' unit tests run them.
+- **A new bug needs a test that catches it.** The bug matrix
+  (`tests/matrix.sh`, scored by `tests/score.py`) must still catch every bug,
+  and with none on, every test must pass.
+- **There is no CI.** Say which checks ran on which device.
+
 ## mobiumdev.github.io
 
 The documentation site is mostly generated; see its
@@ -65,4 +80,4 @@ The documentation site is mostly generated; see its
 
 By contributing, you agree that your contribution is licensed under the
 license of the repository it goes into: the Apache License 2.0 for mobium,
-and MIT for mobium-app and the documentation site.
+mobium-app and morpho-market, and MIT for the documentation site.
