@@ -62,6 +62,28 @@ twice, in SwiftUI and Jetpack Compose, with a switch of deliberate bugs.
   and with none on, every test must pass.
 - **There is no CI.** Say which checks ran on which device.
 
+## mobium-evals and mobium-rag
+
+Two evaluations, one of an agent driving Mobium and one of answers drawn
+from its docs. Both follow one rule: a measurement is not a result until it
+has been shown it can come back the other way.
+
+- **Every grader and judge passes its controls first.** A new task needs a
+  reference driver that passes and null and wrong drivers that fail
+  (`mobium-evals controls`); a new metric or judge needs a positive and a
+  negative control.
+- **A number comes with what it ran on.** Say the Mobium commit, the model
+  and its setting, the device, and the seed, as each run's record does.
+- **The agent never sees the answer key.** mobium-evals gives the agent
+  `mobium mcp` and nothing else; keep Mobium's checks, its defect log and
+  MobiumApp's source out of its reach.
+- **The golden set is reviewed by a person.** A question goes into
+  mobium-rag's `data/golden.jsonl` only through `review/apply.py`, and a new
+  corpus pin is reviewed like code.
+- `uv run pytest -q` runs each one's tests; mobium-rag's CI also runs the
+  retrieval gate (`make ci`). mobium-evals has no CI: runs need an
+  emulator and a model, so say which ran.
+
 ## mobiumdev.github.io
 
 The documentation site is mostly generated; see its
@@ -80,4 +102,4 @@ The documentation site is mostly generated; see its
 
 By contributing, you agree that your contribution is licensed under the
 license of the repository it goes into: the Apache License 2.0 for mobium,
-mobium-app and morpho-market, and MIT for the documentation site.
+mobium-app, morpho-market, mobium-evals and mobium-rag, and MIT for the documentation site.
