@@ -12,6 +12,7 @@ browsers, carried over to devices.
 | --- | --- |
 | [mobium](https://github.com/mobiumdev/mobium) | The tool: CLI, MCP server, test runner and five clients |
 | [mobium-app](https://github.com/mobiumdev/mobium-app) | MobiumApp, the app Mobium's checks drive; every screen is a control for something that can go wrong |
+| [morpho-market](https://github.com/mobiumdev/morpho-market) | Morpho Market, a store app under test in SwiftUI and Jetpack Compose, with a switch of deliberate bugs |
 | [mobiumdev.github.io](https://github.com/mobiumdev/mobiumdev.github.io) | The documentation site, [mobiumdev.github.io](https://mobiumdev.github.io/) |
 
 Mobium is open source under the Apache License 2.0 and has no tagged release yet;
