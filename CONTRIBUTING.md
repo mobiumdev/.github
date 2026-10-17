@@ -84,6 +84,24 @@ has been shown it can come back the other way.
   retrieval gate (`make ci`). mobium-evals has no CI: runs need an
   emulator and a model, so say which ran.
 
+## mobium-roundtrip
+
+Round-trip verification of Mobium's traces and of tests written from them.
+The device decides; no model grades anything.
+
+- **Every mutant is checked against a control.** A suite is scored by the
+  cells it loses or adds against a run with no mutant, and with no mutant
+  every test must pass, or no other row means anything.
+- **A generated test changes only through its generator.** Edit
+  `tools/gen.py` or the agent's prompt and generate again, rather than
+  editing a generated file. The dialog rules in
+  `generated/branch/dialogs-rule.test.json` are the one file written by hand.
+- **Keep the agent away from the answer key**: the prompt gives it the
+  traces and the format reference, never the original tests.
+- **Evidence stays small.** Commit a probe's `RESULTS.md`, JUnit results and
+  scores; traces, screenshots and reports are made again by `tools/run.sh`.
+- **There is no CI.** Say which device and which Mobium commit a run used.
+
 ## mobiumdev.github.io
 
 The documentation site is mostly generated; see its
@@ -102,4 +120,5 @@ The documentation site is mostly generated; see its
 
 By contributing, you agree that your contribution is licensed under the
 license of the repository it goes into: the Apache License 2.0 for mobium,
-mobium-app, morpho-market, mobium-evals and mobium-rag, and MIT for the documentation site.
+mobium-app, morpho-market, mobium-evals, mobium-rag and mobium-roundtrip,
+and MIT for the documentation site.
