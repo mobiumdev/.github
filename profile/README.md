@@ -1,6 +1,6 @@
 ## Mobium
 
-**Mobile app automation for AI agents and humans.** One Go binary drives
+**Mobile app automation for AI agents and people.** One Go binary drives
 Android emulators and phones, iOS simulators and iPhones, and Fire TV, through
 a CLI, an MCP server and clients for Go, Python, JavaScript, Java and .NET.
 
