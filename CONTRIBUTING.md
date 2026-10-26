@@ -62,6 +62,19 @@ twice, in SwiftUI and Jetpack Compose, with a switch of deliberate bugs.
   and with none on, every test must pass.
 - **There is no CI.** Say which checks ran on which device.
 
+## morpho-match
+
+Morpho Match is an app under test as well: a seeded memory game, a sort
+level played by dragging, and a two-player duo with its own Go server.
+
+- **A deal is seeded.** A test opens `morphomatch://play?seed=N`, and
+  `GameTest` pins seed 42's deal; a change to the deal changes that test.
+- **A new bug needs a test that catches it**, as in Morpho Market:
+  `tests/matrix.sh` for the app, `tests-duo/duo-matrix.sh` for the server.
+- **The sort level drops a card where its drag carried it**, on purpose:
+  it is the case a device that magnifies drags fails.
+- **There is no CI.** Say which checks ran on which device.
+
 ## mobium-evals and mobium-rag
 
 Two evaluations, one of an agent driving Mobium and one of answers drawn
@@ -120,5 +133,5 @@ The documentation site is mostly generated; see its
 
 By contributing, you agree that your contribution is licensed under the
 license of the repository it goes into: the Apache License 2.0 for mobium,
-mobium-app, morpho-market, mobium-evals, mobium-rag and mobium-roundtrip,
-and MIT for the documentation site.
+mobium-app, morpho-market, morpho-match, mobium-evals, mobium-rag and
+mobium-roundtrip, and MIT for the documentation site.
