@@ -13,6 +13,7 @@ browsers, carried over to devices.
 | [mobium](https://github.com/mobiumdev/mobium) | The tool: CLI, MCP server, test runner and five clients |
 | [mobium-app](https://github.com/mobiumdev/mobium-app) | MobiumApp, the app Mobium's checks drive; every screen is a control for something that can go wrong |
 | [morpho-market](https://github.com/mobiumdev/morpho-market) | Morpho Market, a store app under test in SwiftUI and Jetpack Compose, with a switch of deliberate bugs |
+| [morpho-match](https://github.com/mobiumdev/morpho-match) | Morpho Match, a memory game under test in Jetpack Compose, for phones and Meta Quest panels, with a two-player duo and a switch of deliberate bugs |
 | [mobium-evals](https://github.com/mobiumdev/mobium-evals) | An evaluation of AI agents driving Mobium over MCP, graded on the device's own state, and the loop that improves what agents read |
 | [mobium-roundtrip](https://github.com/mobiumdev/mobium-roundtrip) | Round-trip verification: a test is traced, turned back into a test by a table or an AI agent, and both must catch the same deliberate bugs |
 | [mobium-rag](https://github.com/mobiumdev/mobium-rag) | Question answering over Mobium's docs, and an evaluation whose every metric, the LLM judge included, passes its own controls |
