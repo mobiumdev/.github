@@ -1,11 +1,12 @@
-<p align="center"><a href="https://github.com/mobiumdev/mobium"><img src="https://raw.githubusercontent.com/mobiumdev/mobium/main/assets/branding/mobium-banner.gif" alt="Mobium — mobile app automation for AI agents and people. Android, iOS, TV, Wear OS, Meta Quest." width="100%"></a></p>
+<p align="center"><a href="https://github.com/mobiumdev/mobium"><img src="https://raw.githubusercontent.com/mobiumdev/mobium/main/assets/branding/mobium-banner.gif" alt="Mobium — mobile app automation for AI agents and people. Android, iOS, TV, Wear OS, Car, Meta Quest." width="100%"></a></p>
 
 ## Mobium
 
 **Mobile app automation for AI agents and people.** One Go binary drives
 Android emulators and phones, iOS simulators and iPhones, TVs (Fire TV, Android
-TV and an Apple TV simulator), Wear OS and Meta Quest's 2D app panels, through
-a CLI, an MCP server and clients for Go, Python, JavaScript, Java and .NET.
+TV and an Apple TV simulator), Wear OS, Android Automotive and Meta Quest's 2D
+app panels, through a CLI, an MCP server and clients for Go, Python,
+JavaScript, Java and .NET.
 
 An agent reads the screen with `map`, acts on a ref, and maps again to see what
 changed: the loop [Vibium](https://github.com/VibiumDev/vibium) uses for
